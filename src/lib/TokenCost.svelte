@@ -12,7 +12,10 @@
 	};
 </script>
 
-<div class="flex items-center text-xs text-slate-500" use:popup={tokenTooltip}>
+<div
+	class="flex items-center text-xs text-slate-500 [&>*]:pointer-events-none"
+	use:popup={tokenTooltip}
+>
 	<CircleStack class="w-4 h-4" />
 	<span>{tokens}</span>
 </div>
